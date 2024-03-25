@@ -39,3 +39,11 @@ testem.log
 Thumbs.db
 
 .nx/cache
+
+# Project Specific
+data
+data_extraction
+
+# Next.js
+.next
+out

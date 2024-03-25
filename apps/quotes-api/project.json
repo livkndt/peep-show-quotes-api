@@ -1,0 +1,24 @@
+{
+  "name": "quotes-api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/quotes-api/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "quotes-api:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "quotes-api:build:development"
+        },
+        "production": {
+          "buildTarget": "quotes-api:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}
