@@ -1,0 +1,24 @@
+{
+  "name": "peep-show-quotes",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/peep-show-quotes/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "peep-show-quotes:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "peep-show-quotes:build:development"
+        },
+        "production": {
+          "buildTarget": "peep-show-quotes:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}
