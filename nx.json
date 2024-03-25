@@ -14,11 +14,7 @@
     ],
     "sharedGlobals": []
   },
-  "targetDefaults": {
-    "format": {
-      "cache": true
-    }
-  },
+  "targetDefaults": { "format": { "cache": true } },
   "plugins": [
     {
       "plugin": "@nx/webpack/plugin",
@@ -28,18 +24,8 @@
         "previewTargetName": "preview"
       }
     },
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    },
-    {
-      "plugin": "@nx/jest/plugin",
-      "options": {
-        "targetName": "test"
-      }
-    },
+    { "plugin": "@nx/eslint/plugin", "options": { "targetName": "lint" } },
+    { "plugin": "@nx/jest/plugin", "options": { "targetName": "test" } },
     {
       "plugin": "@nx/next/plugin",
       "options": {
@@ -49,20 +35,10 @@
         "serveStaticTargetName": "serve-static"
       }
     },
-    {
-      "plugin": "@nx/playwright/plugin",
-      "options": {
-        "targetName": "e2e"
-      }
-    }
+    { "plugin": "@nx/playwright/plugin", "options": { "targetName": "e2e" } }
   ],
-  "nxCloudAccessToken": "YzVhZmJmMTUtNDYwNi00OWU4LWJlMDItZmI2ZmJhYWM3NmQ0fHJlYWQtd3JpdGU=",
+  "nxCloudAccessToken": "YzY4YWFhYjQtM2Q4ZS00NzgyLTgzNjYtZGIxYjAxNzRkMjk2fHJlYWQtd3JpdGU=",
   "generators": {
-    "@nx/next": {
-      "application": {
-        "style": "css",
-        "linter": "eslint"
-      }
-    }
+    "@nx/next": { "application": { "style": "css", "linter": "eslint" } }
   }
 }
